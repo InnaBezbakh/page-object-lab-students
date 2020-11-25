@@ -3,11 +3,13 @@ package project.tests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import project.pages.BasePage;
 
 public class BaseTest {
+  //
 
   @Before
   public void setUp() {
@@ -19,6 +21,8 @@ public class BaseTest {
     //get driver from base page and maximize window
     BasePage.getDriver().manage().window().maximize();
   }
+
+
 
   @After
   public void closeDriver() {
